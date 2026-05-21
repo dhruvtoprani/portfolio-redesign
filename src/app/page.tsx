@@ -5,10 +5,12 @@ import { ProjectCard } from "@/components/cards/project-card";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { TemplateStack } from "@/components/visuals/template-stack";
 import {
+  aboutNarrative,
+  educationHighlights,
   experience,
   positioningLine,
   projects,
-  signalHighlights,
+  toolsAndSkills,
 } from "@/data/site-content";
 
 export default function Home() {
@@ -20,15 +22,13 @@ export default function Home() {
       <section className="glass-panel mint-ring relative overflow-hidden p-6 md:p-8">
         <div className="grid gap-8 md:grid-cols-[1.08fr_0.92fr] md:items-center">
           <div className="space-y-6">
-            <p className="signal-label">PERSONALFOLIO TEMPLATE · CUSTOMIZED FOR DHRUV</p>
+            <p className="signal-label">TEMPLATE DIRECTION · GREEN + BLACK</p>
             <h1 className="max-w-3xl text-4xl font-semibold leading-[1.03] text-smoke md:text-6xl">
-              Portfolio where strategy, systems, and technical depth feel obvious.
+              I build intelligent systems that turn complexity into leverage.
             </h1>
             <p className="max-w-2xl text-base leading-relaxed text-smoke/72">
-              I’m Dhruv Toprani, a Computer Engineering student at Michigan State
-              University building AI systems, robotics workflows, product
-              operations, and execution frameworks that turn complexity into
-              leverage.
+              Computer Engineering student at Michigan State University working
+              across product, AI systems, robotics, and technical execution.
             </p>
             <p className="text-sm tracking-[0.12em] text-mist/92">{positioningLine}</p>
 
@@ -37,7 +37,7 @@ export default function Home() {
                 href="/projects"
                 className="inline-flex items-center gap-2 rounded-full border border-mist/40 bg-mist/16 px-5 py-2.5 text-smoke transition-colors hover:bg-mist/24"
               >
-                View Projects
+                View Work
                 <ArrowUpRight className="size-3.5" />
               </Link>
               <a
@@ -61,44 +61,38 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mt-8 grid gap-4 md:grid-cols-3">
-        <article className="glass-panel p-5">
-          <p className="text-xs tracking-[0.14em] text-mist/85">FOCUS</p>
-          <p className="mt-2 text-sm leading-relaxed text-smoke/76">
-            Intelligent systems across product, robotics, and technical program
-            execution.
-          </p>
+      <section className="mt-8 grid gap-4 lg:grid-cols-[1.25fr_0.75fr]">
+        <article className="glass-panel p-6">
+          <SectionHeading
+            label="ABOUT ME"
+            title="Building where product strategy meets technical systems."
+          />
+          <div className="mt-4 grid gap-4">
+            {aboutNarrative.slice(0, 2).map((paragraph) => (
+              <p key={paragraph} className="text-sm leading-relaxed text-smoke/75">
+                {paragraph}
+              </p>
+            ))}
+          </div>
         </article>
-        <article className="glass-panel p-5">
-          <p className="text-xs tracking-[0.14em] text-mist/85">SIGNAL</p>
-          <p className="mt-2 text-sm leading-relaxed text-smoke/76">
-            UURAF first-place awards in both engineering and business categories.
-          </p>
-        </article>
-        <article className="glass-panel p-5">
-          <p className="text-xs tracking-[0.14em] text-mist/85">MINDSET</p>
-          <p className="mt-2 text-sm leading-relaxed text-smoke/76">
-            Confident systems thinking with practical build velocity.
-          </p>
-        </article>
-      </section>
 
-      <section className="mt-10 glass-panel p-5 md:p-7">
-        <p className="signal-label">SIGNAL STRIP</p>
-        <div className="mt-4 grid gap-2 md:grid-cols-2">
-          {signalHighlights.map((highlight) => (
-            <p key={highlight} className="text-sm text-smoke/76">
-              {highlight}
-            </p>
-          ))}
-        </div>
+        <article className="glass-panel p-6">
+          <p className="signal-label">EDUCATION</p>
+          <div className="mt-4 space-y-3">
+            {educationHighlights.map((item) => (
+              <p key={item} className="text-sm leading-relaxed text-smoke/75">
+                {item}
+              </p>
+            ))}
+          </div>
+        </article>
       </section>
 
       <section className="mt-16 space-y-6">
         <SectionHeading
-          label="FEATURED PROJECTS"
-          title="Selected work with system clarity and measurable outcomes."
-          description="Drafting this in a Personalfolio-inspired visual style with sharper hierarchy and cleaner card rhythm."
+          label="SELECTED WORK"
+          title="Projects with clear system design and practical impact."
+          description="Focused sample set from AI systems, research, hardware, and product execution."
         />
         <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
           {featuredProjects.map((project) => (
@@ -116,8 +110,8 @@ export default function Home() {
 
       <section className="mt-16 space-y-6">
         <SectionHeading
-          label="EXPERIENCE PREVIEW"
-          title="Execution across product operations, software systems, and research."
+          label="EXPERIENCE"
+          title="Execution across software, product systems, and applied research."
         />
         <div className="grid gap-4 md:grid-cols-2">
           {featuredExperience.map((item) => (
@@ -138,21 +132,26 @@ export default function Home() {
 
       <section className="mt-16 glass-panel p-6 md:p-8">
         <SectionHeading
-          label="RESEARCH + SYSTEMS"
-          title="I’m interested in systems where architecture and human behavior are inseparable."
+          label="TOOLS & SKILLS"
+          title="Technical stack and operating capabilities."
         />
-        <p className="mt-4 max-w-3xl text-sm leading-relaxed text-smoke/70">
-          This section stays as a modular slot for deeper writing on AI agents,
-          human-robot collaboration, and operational design patterns. We can drop
-          in diagrams, experiment snapshots, and synthesis notes next.
-        </p>
+        <div className="mt-5 flex flex-wrap gap-2.5">
+          {toolsAndSkills.map((skill) => (
+            <span
+              key={skill}
+              className="rounded-full border border-beaver/30 bg-black/20 px-3.5 py-1.5 text-xs tracking-[0.1em] text-smoke/80"
+            >
+              {skill}
+            </span>
+          ))}
+        </div>
       </section>
 
       <section className="mt-16 mb-8 glass-panel p-6 md:p-8">
         <SectionHeading
           label="CONTACT"
-          title="Let’s build something with edge."
-          description="Open to conversations around product systems, AI operations, robotics, and high-leverage technical execution."
+          title="Open to product, AI systems, and engineering conversations."
+          description="If you're building something ambitious that needs strategy and execution, let's connect."
         />
         <div className="mt-5 flex flex-wrap gap-3 text-xs tracking-[0.12em]">
           <Link

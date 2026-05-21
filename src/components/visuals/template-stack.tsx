@@ -7,7 +7,7 @@ const cards = [
   {
     id: "card-1",
     title: "Welcome to my digital space",
-    subtitle: "Product, systems, and execution",
+    subtitle: "Product, systems, and technical execution",
     rotation: -14,
     offsetX: 78,
     offsetY: -34,
@@ -16,7 +16,7 @@ const cards = [
   {
     id: "card-2",
     title: "Signal-rich project snapshots",
-    subtitle: "AI, robotics, and operating systems",
+    subtitle: "AI, robotics, and operational workflows",
     rotation: -10,
     offsetX: 30,
     offsetY: 28,
@@ -25,7 +25,7 @@ const cards = [
   {
     id: "card-3",
     title: "Dhruv Toprani",
-    subtitle: "I build intelligent systems with edge.",
+    subtitle: "I build intelligent systems that scale leverage.",
     rotation: -5,
     offsetX: -10,
     offsetY: 90,
@@ -40,7 +40,7 @@ export function TemplateStack() {
       <div className="hero-orb hero-orb--secondary" />
 
       <div className="absolute left-6 top-5 rounded-full border border-mist/30 bg-black/35 px-4 py-1.5 text-xs tracking-[0.12em] text-mist/95">
-        40+ Components
+        Selected Sections
       </div>
 
       {cards.map((card) => (

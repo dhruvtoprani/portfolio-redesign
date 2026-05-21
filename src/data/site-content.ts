@@ -27,6 +27,27 @@ export const signalHighlights = [
   "President, Tower Guard Honor Society",
 ];
 
+export const educationHighlights = [
+  "Computer Engineering, Michigan State University",
+  "Focus: AI systems, robotics, product, and operations",
+  "Building across research, software, and technical program execution",
+];
+
+export const toolsAndSkills = [
+  "Python",
+  "TypeScript",
+  "React",
+  "Next.js",
+  "SQL",
+  "Power BI",
+  "Salesforce",
+  "Flask",
+  "Supabase",
+  "MCP / Context Engineering",
+  "Optimization (MILP)",
+  "TPM Systems",
+];
+
 export const projectFilters: Array<ProjectCategory | "All"> = [
   "All",
   "AI Systems",

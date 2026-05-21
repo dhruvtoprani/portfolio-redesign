@@ -49,6 +49,15 @@ Purpose: preserve continuity across context truncation and keep implementation d
   - glass panels and cleaner pill controls
   - new template-style hero card stack
   - refreshed nav, footer, cards, and section styling across pages
+- User requested a different live reference template:
+  - `https://aanshuman-agarwal.vercel.app`
+- Implemented green + black theme shift and section restructuring on Home:
+  - About Me
+  - Education
+  - Selected Work
+  - Experience
+  - Tools & Skills
+  - Contact
 
 ## Assumptions Made
 

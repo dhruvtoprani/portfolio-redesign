@@ -19,6 +19,7 @@ Purpose: capture unresolved decisions, deferred items, and clarification debt be
    - decide thumbnail style for project cards
    - review whether current About-page portrait treatment should stay or be redesigned
    - confirm direct Figma connector access (current node access error prevents pixel-perfect extraction)
+   - confirm whether to keep multi-page navigation or switch to a one-page section-scroll layout like the latest reference
 6. Writing tone pass:
    - final copy editing to remove filler and sharpen confidence
 7. Deployment:
