@@ -1,26 +1,90 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --ink-base: #0a0908;
+  --burgundy: #49111c;
+  --smoke: #f2f4f3;
+  --beaver: #a9927d;
+  --walnut: #5e503f;
+  --mist: #b8fff9;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-ink-base: var(--ink-base);
+  --color-burgundy: var(--burgundy);
+  --color-smoke: var(--smoke);
+  --color-beaver: var(--beaver);
+  --color-walnut: var(--walnut);
+  --color-mist: var(--mist);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  border-color: color-mix(in oklab, var(--beaver) 35%, transparent);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  color: var(--smoke);
+  font-family: var(--font-geist-sans), sans-serif;
+  background-color: var(--ink-base);
+  background-image:
+    radial-gradient(circle at 12% 12%, rgba(73, 17, 28, 0.42) 0%, transparent 42%),
+    radial-gradient(circle at 85% 16%, rgba(169, 146, 125, 0.16) 0%, transparent 30%),
+    linear-gradient(135deg, rgba(10, 9, 8, 1) 0%, rgba(7, 7, 7, 1) 100%);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+::selection {
+  background: color-mix(in oklab, var(--mist) 70%, transparent);
+  color: var(--ink-base);
+}
+
+.page-shell {
+  position: relative;
+  isolation: isolate;
+}
+
+.page-shell::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(94, 80, 63, 0.04) 0%,
+      rgba(94, 80, 63, 0) 12%,
+      rgba(94, 80, 63, 0.04) 100%
+    );
+  z-index: -2;
+}
+
+.grain-overlay {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+  opacity: 0.18;
+  background-image: radial-gradient(rgba(242, 244, 243, 0.6) 0.4px, transparent 0.4px);
+  background-size: 3px 3px;
+}
+
+.signal-grid {
+  background-image:
+    linear-gradient(rgba(169, 146, 125, 0.12) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(169, 146, 125, 0.12) 1px, transparent 1px);
+  background-size: 26px 26px;
+}
+
+.signal-label {
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  color: color-mix(in oklab, var(--beaver) 85%, white 15%);
 }

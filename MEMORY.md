@@ -1,0 +1,51 @@
+# Memory Log
+
+Purpose: preserve continuity across context truncation and keep implementation decisions visible.
+
+## Current Snapshot
+
+- Project: personal portfolio redesign for Dhruv Toprani
+- Design direction: clean, minimal, premium, futuristic, bold, recruiter-friendly
+- Core positioning: `I build intelligent systems that turn complexity into leverage.`
+- Stack: Next.js + TypeScript + Tailwind v4 + Framer Motion + Lucide
+
+## Session Log
+
+### 2026-05-20
+
+- Initialized project with `npm create next-app@latest`.
+- Installed `framer-motion`, `lucide-react`, and `clsx`.
+- Replaced default template with:
+  - persistent navigation and footer
+  - five routes: Home, Projects, Experience, About, Contact
+  - project filter system and reusable project card
+  - experience timeline cards and leadership section
+  - case-study dynamic route scaffold (`/projects/[slug]`)
+  - dark premium visual system based on brief color palette
+- Added `README.md` with placeholder replacement instructions.
+- Added `UNFINISHED_ACTION_ITEMS.md` for unresolved decisions.
+
+### 2026-05-21
+
+- Located B/W headshot in Downloads:
+  - `/Users/dhruvtoprani/Downloads/headshot_toprani_bw.png`
+- Copied headshot into:
+  - `/public/headshot-toprani-bw.png`
+- Integrated portrait on About page in a premium visual block.
+- Re-ran validation:
+  - `npm run lint` passed
+  - `npm run build` passed
+
+## Assumptions Made
+
+- Portfolio is a standalone new project folder inside `portfolio_3.0`.
+- Next.js App Router is the preferred framework.
+- Placeholder external links are acceptable until final URLs are provided.
+- Case studies are scaffolded now and will be fully authored later.
+
+## Next High-Leverage Tasks
+
+1. Replace all placeholder links, resume, and contact data.
+2. Add real metrics and outcomes to project and experience entries.
+3. Polish microcopy for tone consistency and recruiter speed-read.
+4. Add project hero images/thumbnails and SEO/social metadata assets.
