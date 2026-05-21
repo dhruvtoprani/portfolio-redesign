@@ -35,6 +35,11 @@ Purpose: preserve continuity across context truncation and keep implementation d
 - Re-ran validation:
   - `npm run lint` passed
   - `npm run build` passed
+- Created GitHub repository and pushed:
+  - `https://github.com/dhruvtoprani/portfolio-redesign`
+- Deployed to Vercel:
+  - Preview: `https://portfolio-redesign-w3vao1fd8-dhruv-kekin-topranis-projects.vercel.app`
+  - Production alias (auto-created by first deploy): `https://portfolio-redesign-sigma.vercel.app`
 
 ## Assumptions Made
 
