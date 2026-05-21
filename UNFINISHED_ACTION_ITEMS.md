@@ -18,6 +18,7 @@ Purpose: capture unresolved decisions, deferred items, and clarification debt be
 5. Visual assets:
    - decide thumbnail style for project cards
    - review whether current About-page portrait treatment should stay or be redesigned
+   - confirm direct Figma connector access (current node access error prevents pixel-perfect extraction)
 6. Writing tone pass:
    - final copy editing to remove filler and sharpen confidence
 7. Deployment:

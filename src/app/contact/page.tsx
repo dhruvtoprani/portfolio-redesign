@@ -34,7 +34,7 @@ export default function ContactPage() {
             href={method.href}
             target={method.href.startsWith("http") ? "_blank" : undefined}
             rel={method.href.startsWith("http") ? "noreferrer" : undefined}
-            className="group flex items-center justify-between rounded-2xl border border-beaver/35 bg-black/35 p-5 transition-all hover:-translate-y-0.5 hover:border-mist/60"
+            className="glass-panel group flex items-center justify-between p-5 transition-all hover:-translate-y-0.5 hover:border-mist/55"
           >
             <span className="inline-flex items-center gap-3 text-sm text-smoke/80">
               {iconMap[method.label] ?? <ArrowUpRight className="size-4" />}
@@ -45,7 +45,7 @@ export default function ContactPage() {
         ))}
       </div>
 
-      <div className="mt-10 rounded-2xl border border-beaver/30 bg-black/30 p-6">
+      <div className="glass-panel mt-10 p-6">
         <p className="signal-label">LOCATION</p>
         <p className="mt-3 inline-flex items-center gap-2 text-sm text-smoke/72">
           <MapPin className="size-4 text-mist" />

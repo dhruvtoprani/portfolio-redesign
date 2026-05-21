@@ -14,7 +14,7 @@ const nodes = [
 
 export function SignalField() {
   return (
-    <div className="signal-grid relative h-56 overflow-hidden rounded-2xl border border-beaver/30 bg-black/35 md:h-72">
+    <div className="signal-grid glass-panel relative h-56 overflow-hidden md:h-72">
       {nodes.map((node) => (
         <motion.div
           key={node.id}

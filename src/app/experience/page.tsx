@@ -23,7 +23,7 @@ export default function ExperiencePage() {
         ))}
       </div>
 
-      <section className="mt-14 rounded-2xl border border-beaver/30 bg-black/30 p-6">
+      <section className="glass-panel mt-14 p-6">
         <SectionHeading
           label="LEADERSHIP"
           title="Leading teams, operations, and high-trust communities."
@@ -32,9 +32,9 @@ export default function ExperiencePage() {
           {leadership.map((item) => (
             <article
               key={`${item.organization}-${item.role}`}
-              className="rounded-xl border border-beaver/25 bg-black/35 p-4"
+              className="rounded-xl border border-beaver/24 bg-black/24 p-4"
             >
-              <p className="text-xs tracking-[0.12em] text-beaver">{item.role}</p>
+              <p className="text-xs tracking-[0.12em] text-mist/85">{item.role}</p>
               <h3 className="mt-2 text-base font-medium text-smoke">
                 {item.organization}
               </h3>

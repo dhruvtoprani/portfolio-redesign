@@ -26,7 +26,7 @@ export default function AboutPage() {
           <p className="text-sm tracking-[0.12em] text-beaver">{positioningLine}</p>
         </div>
 
-        <figure className="rounded-2xl border border-beaver/30 bg-black/35 p-3">
+        <figure className="glass-panel p-3">
           <div className="overflow-hidden rounded-xl border border-beaver/25">
             <Image
               src="/headshot-toprani-bw.png"
@@ -43,7 +43,7 @@ export default function AboutPage() {
         </figure>
       </div>
 
-      <section className="mt-14 rounded-2xl border border-beaver/30 bg-black/30 p-6 md:p-8">
+      <section className="glass-panel mt-14 p-6 md:p-8">
         <SectionHeading
           label="WHAT I AM USUALLY THINKING ABOUT"
           title="Long-horizon systems questions with practical execution paths."
@@ -52,7 +52,7 @@ export default function AboutPage() {
           {activeInterests.map((interest) => (
             <p
               key={interest}
-              className="rounded-xl border border-beaver/30 bg-black/30 px-4 py-3 text-sm text-smoke/75"
+              className="rounded-xl border border-beaver/26 bg-black/20 px-4 py-3 text-sm text-smoke/75"
             >
               {interest}
             </p>

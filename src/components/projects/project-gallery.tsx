@@ -34,8 +34,8 @@ export function ProjectGallery({ projects }: ProjectGalleryProps) {
             className={clsx(
               "rounded-full border px-4 py-1.5 text-xs tracking-[0.12em] transition-all",
               activeFilter === filter
-                ? "border-mist/60 bg-mist/10 text-mist"
-                : "border-beaver/35 text-smoke/70 hover:border-mist/45 hover:text-smoke",
+                ? "border-mist/62 bg-mist/14 text-smoke"
+                : "border-beaver/30 bg-black/20 text-smoke/72 hover:border-mist/45 hover:text-smoke",
             )}
           >
             {filter}

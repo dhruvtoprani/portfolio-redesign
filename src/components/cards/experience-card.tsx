@@ -7,14 +7,14 @@ type ExperienceCardProps = {
 
 export function ExperienceCard({ item }: ExperienceCardProps) {
   return (
-    <article className="rounded-2xl border border-beaver/30 bg-black/35 p-5">
+    <article className="glass-panel p-5">
       <div className="space-y-1">
-        <p className="text-xs tracking-[0.12em] text-beaver">{item.dateRange}</p>
+        <p className="text-xs tracking-[0.12em] text-mist/85">{item.dateRange}</p>
         <h3 className="text-lg font-semibold text-smoke">{item.role}</h3>
         <p className="text-sm text-smoke/80">{item.organization}</p>
-        <p className="text-xs tracking-[0.08em] text-smoke/60">{item.location}</p>
+        <p className="text-xs tracking-[0.08em] text-smoke/62">{item.location}</p>
       </div>
-      <ul className="mt-4 space-y-2 text-sm leading-relaxed text-smoke/70">
+      <ul className="mt-4 space-y-2 text-sm leading-relaxed text-smoke/74">
         {item.bullets.map((bullet) => (
           <li key={bullet} className="pl-4 relative">
             <span className="absolute left-0 top-[0.45rem] h-1.5 w-1.5 rounded-full bg-mist/80" />

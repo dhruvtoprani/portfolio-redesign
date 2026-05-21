@@ -40,6 +40,15 @@ Purpose: preserve continuity across context truncation and keep implementation d
 - Deployed to Vercel:
   - Preview: `https://portfolio-redesign-w3vao1fd8-dhruv-kekin-topranis-projects.vercel.app`
   - Production alias (auto-created by first deploy): `https://portfolio-redesign-sigma.vercel.app`
+- User requested pivot toward Figma template:
+  - `https://www.figma.com/design/rqWleD6ohZQdWwvWScti6Z/...`
+  - `https://www.figma.com/proto/rqWleD6ohZQdWwvWScti6Z/...`
+- Figma connector access to node `1:2` failed (access issue persisted); worked from public thumbnail style cues.
+- Completed first-pass "Personalfolio-inspired" redesign:
+  - teal/deep-navy visual system
+  - glass panels and cleaner pill controls
+  - new template-style hero card stack
+  - refreshed nav, footer, cards, and section styling across pages
 
 ## Assumptions Made
 

@@ -1,12 +1,12 @@
 @import "tailwindcss";
 
 :root {
-  --ink-base: #0a0908;
-  --burgundy: #49111c;
-  --smoke: #f2f4f3;
-  --beaver: #a9927d;
-  --walnut: #5e503f;
-  --mist: #b8fff9;
+  --ink-base: #06121d;
+  --burgundy: #123c45;
+  --smoke: #eaf8f6;
+  --beaver: #7ea7a9;
+  --walnut: #0f2a36;
+  --mist: #87ffd7;
 }
 
 @theme inline {
@@ -31,9 +31,10 @@ body {
   font-family: var(--font-geist-sans), sans-serif;
   background-color: var(--ink-base);
   background-image:
-    radial-gradient(circle at 12% 12%, rgba(73, 17, 28, 0.42) 0%, transparent 42%),
-    radial-gradient(circle at 85% 16%, rgba(169, 146, 125, 0.16) 0%, transparent 30%),
-    linear-gradient(135deg, rgba(10, 9, 8, 1) 0%, rgba(7, 7, 7, 1) 100%);
+    radial-gradient(circle at 12% 6%, rgba(32, 199, 166, 0.35) 0%, transparent 38%),
+    radial-gradient(circle at 92% 12%, rgba(21, 74, 93, 0.5) 0%, transparent 32%),
+    radial-gradient(circle at 60% 80%, rgba(8, 36, 58, 0.55) 0%, transparent 35%),
+    linear-gradient(140deg, #050e18 0%, #071727 48%, #091d2f 100%);
 }
 
 a {
@@ -56,13 +57,12 @@ a {
   position: absolute;
   inset: 0;
   pointer-events: none;
-  background:
-    linear-gradient(
-      to bottom,
-      rgba(94, 80, 63, 0.04) 0%,
-      rgba(94, 80, 63, 0) 12%,
-      rgba(94, 80, 63, 0.04) 100%
-    );
+  background: linear-gradient(
+    to bottom,
+    rgba(126, 167, 169, 0.08) 0%,
+    rgba(126, 167, 169, 0) 16%,
+    rgba(126, 167, 169, 0.04) 100%
+  );
   z-index: -2;
 }
 
@@ -71,20 +71,57 @@ a {
   inset: 0;
   pointer-events: none;
   z-index: -1;
-  opacity: 0.18;
-  background-image: radial-gradient(rgba(242, 244, 243, 0.6) 0.4px, transparent 0.4px);
+  opacity: 0.14;
+  background-image: radial-gradient(rgba(234, 248, 246, 0.8) 0.4px, transparent 0.4px);
   background-size: 3px 3px;
 }
 
 .signal-grid {
   background-image:
-    linear-gradient(rgba(169, 146, 125, 0.12) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(169, 146, 125, 0.12) 1px, transparent 1px);
+    linear-gradient(rgba(126, 167, 169, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(126, 167, 169, 0.1) 1px, transparent 1px);
   background-size: 26px 26px;
 }
 
 .signal-label {
   font-size: 11px;
   letter-spacing: 0.2em;
-  color: color-mix(in oklab, var(--beaver) 85%, white 15%);
+  color: color-mix(in oklab, var(--mist) 72%, white 28%);
+}
+
+.glass-panel {
+  border-radius: 1.25rem;
+  border: 1px solid rgba(126, 167, 169, 0.28);
+  background: linear-gradient(155deg, rgba(14, 39, 55, 0.72), rgba(8, 24, 37, 0.64));
+  box-shadow:
+    inset 0 1px 0 rgba(234, 248, 246, 0.05),
+    0 18px 42px rgba(2, 8, 14, 0.35);
+  backdrop-filter: blur(10px);
+}
+
+.mint-ring {
+  box-shadow: 0 0 0 1px rgba(135, 255, 215, 0.24), 0 0 28px rgba(135, 255, 215, 0.15);
+}
+
+.hero-orb {
+  position: absolute;
+  border-radius: 9999px;
+  pointer-events: none;
+  filter: blur(30px);
+}
+
+.hero-orb--primary {
+  width: 12rem;
+  height: 12rem;
+  right: -2rem;
+  top: -2.5rem;
+  background: rgba(41, 219, 174, 0.22);
+}
+
+.hero-orb--secondary {
+  width: 8rem;
+  height: 8rem;
+  left: -1.5rem;
+  bottom: -1.5rem;
+  background: rgba(69, 131, 217, 0.18);
 }
